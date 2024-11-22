@@ -4,68 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="./css/styl.css">
-    <link rel ="icon" type="image/x-icon" href="ee.png">
+    <link rel="icon" href=".src/img/logo.png" type="image/x-icon">
+    <link href="./src/styles/style.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="baner">
-        <img src="baner.jpg" alt="zdj" id="banerzdj">
-     </div>
- 
     <header>
-        <img src="logo.png" class="logo"></img>
-        <nav>
+        <a href="index.html"><img src="./src/img/logo.png" alt="Logo" id="logo"/></a>
         <ul>
-            <li class="button"> O nas<span class="triangle"></span></li>
-            <li class="button"> Cennik<span class="triangle"></span></li>
-            <li class="button"> Galeria<span class="triangle"></span></li>
-            <li class="button"> Kontakt<span class="triangle"></span></li>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About<span class="triangle"></span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Services<span class="triangle"></span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Contact<span class="triangle"></span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Phone</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Blog<span class="triangle"></span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Latest Posts</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </li>
         </ul>
-        </nav>
-        </header>
-     
-     
-     
-         <div class="zdjecia">
-           <div class="zdjecia2">sfdgs
-                    <img class="as" src="ee.png">
-                  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus erat in ligula consectetur, nec commodo nisi ultrices.
-                  Nam posuere at massa efficitur tincidunt.  Quisque dapibus gravida quam, vel ornare ex dapibus in. In in elementum sem.</h1>
-                 
-           </div>
-           <div class="zdjecia3">sg
-             <img class="as" src="ee.png">
-             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus erat in ligula consectetur, nec commodo nisi ultrices.
-                 Nam posuere at massa efficitur tincidunt.  Quisque dapibus gravida quam, vel ornare ex dapibus in. In in elementum sem.</h1>
-               
-           </div>
-         
-           <div class="zdjecia4">sg
-             <img class="as" src="ee.png">
-             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus erat in ligula consectetur, nec commodo nisi ultrices.
-                 Nam posuere at massa efficitur tincidunt.  Quisque dapibus gravida quam, vel ornare ex dapibus in. In in elementum sem.</h1>
-             
-           </div>
-         </div>
-         <div class="tytul">
-     <h2>TYTUL1</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus erat in ligula consectetur, nec commodo nisi ultrices.
-         Nam posuere at massa efficitur tincidunt.  Quisque dapibus gravida quam, vel ornare ex dapibus in. In in elementum sem.</p>
-         <button class="button5"> Kontakt</button>
-         </div>
-         <div class="tytul2">
-     <h2>TYTUL2</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus erat in ligula consectetur, nec commodo nisi ultrices.
-         Nam posuere at massa efficitur tincidunt.  Quisque dapibus gravida quam, vel ornare ex dapibus in. In in elementum sem.</p>
-         <button class="button6"> Kontakt</button>
-         </div>
-         <div class="tytul3">
-     <h2>TYTUL3</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus erat in ligula consectetur, nec commodo nisi ultrices.
-         Nam posuere at massa efficitur tincidunt.  Quisque dapibus gravida quam, vel ornare ex dapibus in. In in elementum sem.</p>
-         <button class="button7"> Kontakt</button>
-         </div>
- 
-    <footer class="footer">elo</footer>
+    </header>
+    <main>
+        <div id="baner"></div>
+        <section>
+            <button class="arrow left">&#11015</button>
+            <table>
+                <tr>
+                    <th></th>
+                    <td><h3>Info</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th></th>
+                    <td><h3>Info</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th></th>
+                    <td><h3>Info</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                </tr>
+            </table>
+            <button class="arrow right">&#11015</button>
+        </section>
+        <section class="articles">
+        <div class="article articleLeft"><h2>Tytul</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia, corrupti voluptatum illum consectetur hic! Quia, ad perspiciatis?<button class="seeButton">Open</button></div>
+        <div class="article"><h2>Tytul</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia, corrupti voluptatum illum consectetur hic! Quia, ad perspiciatis?<button class="seeButton">Open</button></div>
+        <div class="article articleRight"><h2>Tytul</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia, corrupti voluptatum illum consectetur hic! Quia, ad perspiciatis?<button class="seeButton">Open</button></div>
+        </section>
+        
+    </main>
+    <footer>Made by Maksymilian Felczak</footer>
+    
 </body>
 </html>
